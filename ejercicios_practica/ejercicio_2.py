@@ -10,8 +10,10 @@
 # Ejercicios con funciones
 
 def promedio(numeros):
-    print("Funcion promedio")
-    resultado = 0
+    resultado = sum(numeros) / len(numeros)
+    print("El promedio de los números es = ", resultado)
+    return resultado    
+    
     # La función promedio recibe como parámetro una
     # lista de números. Con ella calcule el promedio como:
 
@@ -26,8 +28,6 @@ def promedio(numeros):
     # La función debe retornar (return) el promedio calculado
     # La función debe contemplar si se le pasa una lista vacia
     # (es decir, de "0" elementos)
-
-    return resultado
 
 
 if __name__ == '__main__':
